@@ -1,0 +1,148 @@
+.navbar {
+  position: fixed;
+  background-color: rgb(77, 0, 0);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(77, 0, 0);
+    display: grid;  
+    /* grid-template-columns: auto auto auto auto auto min(110px) min(220px); */
+    grid-template-columns: 
+        auto auto auto auto auto min(110px) min(220px);
+    grid-template-rows: 1;
+    justify-content:
+center;
+align-content: center;
+
+
+}
+    
+.navbar-item a, form {
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+
+.navbar-item a {
+    border-color: black;
+    border-style: none inset;
+    border-left: 0;
+    border-width: 1px;  
+    padding-right: 7px;
+    margin-right: 7px;
+    text-shadow: 
+        2px 2px 2px rgb(65, 0, 65),
+        -2px 2px 2px rgb(65, 0, 65),
+        2px -2px 2px rgb(65, 0, 65),
+        -2px -2px 2px rgb(65, 0, 65);
+} 
+
+.logo, a.title {
+    font-family: netflix;
+    color: black;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border: 0;
+    text-shadow: none;
+}
+
+.logout a {
+    font-size: 1rem;
+    text-align: right;
+    color: rgb(197, 197, 197);
+}
+
+
+.mobile {
+    display: none;
+}
+
+
+@media all and (max-width: 950px) {
+
+        .burger-label {
+            position: absolute;
+            top: .3rem;
+            left: 0;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .burger-label::before {
+          content: "";
+          background-color: rgb(197, 197, 197);
+          width: 1.8rem;
+          height: .23rem;
+          position: absolute;
+          left: .5rem;
+          top: .5rem;
+          box-shadow: 0 .45rem 0 0 rgb(197, 197, 197), 0 .9rem 0 0 rgb(197, 197, 197);
+        }
+        
+        .navbar-list {
+            display: none;
+        }
+          
+        #burger-checkbox {
+            display: none;
+        }
+          
+        #burger-checkbox:checked ~ .navbar-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgb(77, 0, 0);
+            
+        }
+
+        .navbar-item a {
+            border: 0;  
+            padding-right: 0;
+            margin-right: 0;
+        } 
+              
+        
+        .mobile {
+            display: block;
+        }
+
+        .desktop {
+            display: none;
+        }
+        .logout a {
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+
+    }
+
+.material-icons { 
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    padding: 2px;
+}
+/*Cómo centrar la barra de búsqueda y el botón
+No termino de cuadrar la barra de navegación como a mí me gustaría
+*/
+
+
+

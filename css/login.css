@@ -1,0 +1,64 @@
+.welcome {
+    font-size: 150px;
+}
+
+.container-login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: center;
+    border-style: outset;
+    padding: 10px;
+    margin: 0;
+    border-color: azure;
+}
+
+.login-box h2 {
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: normal;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.login-1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: inherit;
+}
+
+.login-2 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin: inherit;
+}
+
+.login-3 {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin: inherit;
+}
+
+.login-5 {
+    margin: inherit;
+}
+
+.login-5 {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    margin: inherit;
+
+}
+
+.login-6 {
+    grid-column-start: 4;
+    background-color: transparent;
+    margin: inherit;
+}

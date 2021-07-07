@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: netflix;
+  src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
+.logo {
+    font-family: "netflix", 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(219, 219, 219);
+}
+
+input {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(43, 43, 43);
+
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: netflix;
+  font-variant: small-caps; 
+  text-shadow: 
+        2px 2px 2px rgb(65, 0, 65),
+        -2px 2px 2px rgb(65, 0, 65),
+        2px -2px 2px rgb(65, 0, 65),
+        -2px -2px 2px rgb(65, 0, 65);
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+    margin-top: 50px;
+}
+
+
