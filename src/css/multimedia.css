@@ -1,12 +1,3 @@
-.tags, .date {
-      font-size: normal;
-    }
-
-.tags {
-      font-variant: small-caps;
-    }
-
-
 .media-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -48,24 +39,10 @@ img {
     border-width: 4px;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    justify-content:space-evenly;
-    align-items: space-evenly;
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.info > .title {
-    font-size: 50px;
-    font-weight: 100;
-}
-
 .media-text {
       display: none;
-      width:inherit;
+      width:100%;
+      height: 100%;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -75,15 +52,42 @@ img {
     }
 
 .media:hover .media-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr 0.2fr 0.2fr;
+    justify-content: center;
+    align-items: grid;
+    width: 100%;
+    gap: 0;
     }
 
+.date {
+    padding-left: 20px;
+}
+
+.tags {
+    padding-left: 20px;
+    font-variant: small-caps;
+    padding-bottom: 70px;
+}
+
+.tags, .date {
+      font-size: normal;
+    }
+
+.media-text > .title {
+    font-size: 55px;
+    font-weight: 100;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 .star {
-    justify-self: end;
-    align-self: end;
-    padding-right: 40px;
+    position: absolute;
+    width: inherit;
+    top: 80%;
+    left: 80%;
+    z-index:20;
 }
 
 .star input {
@@ -95,28 +99,11 @@ img {
 }
 
 .star input:before {
-    background: url("../img/star-gray.png");
-    content: "";
-    position: absolute;
-   /*  fuera del hover */
-    /*cómo cambiarle el tamaño a la imagen llegados a este punto */
+    content: url("../img/star-gray.png");
+   
+    /* PROBLEMA CON FIREFOX */
 }
 
 .star input:checked:before {
     content: url("../img/star-active40px.png");
 }
-
-/* .info > button.material-icons {
-    font-size: 35px;
-    border: 0;
-    justify-self: end;
-    align-self: end;
-}
-
-.info > button.material-icons:hover {
-    color: rgb(252, 252, 172);
-}
-
-.info > button.material-icons:active {
-    color: rgb(255, 255, 0);
-} */
