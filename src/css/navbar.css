@@ -7,6 +7,7 @@
   z-index: 999;
 }
 
+
 #burger-checkbox {
     display: none;
 }
@@ -16,16 +17,21 @@
     margin: 0;
     padding: 0;
     background-color: rgb(77, 0, 0);
-    display: grid;  
-    /* grid-template-columns: auto auto auto auto auto min(110px) min(220px); */
+    /* display: grid;  
     grid-template-columns: 
         auto auto auto auto auto min(110px) min(220px);
     grid-template-rows: 1;
-    justify-content:
-center;
-align-content: center;
+    justify-content:center;
+    align-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
+}
+
+.searchandbutton {
+    display: flex;
 }
     
 .navbar-item a, form {
@@ -60,6 +66,7 @@ align-content: center;
     border: 0;
     text-shadow: none;
 }
+
 
 .logout a {
     font-size: 1rem;
@@ -131,8 +138,6 @@ align-content: center;
             font-size: 1rem;
             text-align: center;
         }
-        
-
     }
 
 .material-icons { 
@@ -143,6 +148,3 @@ align-content: center;
 /*Cómo centrar la barra de búsqueda y el botón
 No termino de cuadrar la barra de navegación como a mí me gustaría
 */
-
-
-

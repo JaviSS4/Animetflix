@@ -84,7 +84,7 @@ img {
 
 .star {
     position: absolute;
-    width: inherit;
+    width: 50px;
     top: 80%;
     left: 80%;
     z-index:20;
