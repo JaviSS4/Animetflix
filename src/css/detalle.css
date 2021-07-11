@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(4, 20%);
     grid-template-rows: 100px 150px 150px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -33,9 +33,13 @@
     grid-column: 2 / 4;
     margin-bottom: 0;
 }
+.title-v {
+    margin-bottom: 0;
+    }
 
 .detailed-video {
     grid-column: 4/4;
+    margin-top: 100px;
 }
 
 .detailed-synopsis {
@@ -76,6 +80,8 @@ blockquote {
 
     .detailed-video {
         grid-column: 1/4;
+        margin-top: 0;
+}
     }
 
     .detailed-synopsis {
@@ -162,7 +168,59 @@ blockquote {
     }
 }
 
+.detailed-synopsis-2 span {
+    font-style: italic;
+}
 
+.staff-seiyuu {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    flex-wrap: wrap;
+}
 
+.s-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    text-align: center;
+    padding: 0;
+}
 
+.s-list * {
+    list-style: none;
+    margin-left: 10px;
+    padding-right: 10px;
+}
 
+.job {
+    font-size: small;
+    font-style: italic;
+}
+
+.lista-capitulos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.capitulo {
+    display: flex;
+    height: 150px;
+    width: 200px;
+    background-image: url(../img/madoka.jpg);
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.capitulo h2 {
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 0;
+}
