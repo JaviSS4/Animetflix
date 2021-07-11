@@ -1,16 +1,26 @@
 .welcome {
-    font-size: 150px;
+    font-size: 10vw;
+}
+
+html {
+    background-image: url(../img/sky.jpg);
+    background-position: auto
+    ;
+    background-size:auto;
+    background-repeat: no-repeat;
+
 }
 
 .container-login-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 1;
 }
 
 .login-box {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-columns: 20% 15% 30% 30%;
     grid-template-rows: auto auto auto;
     align-items: center;
     grid-gap: 10px;
@@ -19,46 +29,60 @@
     padding: 10px;
     margin: 0;
     border-color: azure;
+    background-color: rgba(0, 0, 0, 0.555);
+    
 }
 
-.login-box h2 {
+.login-box * {
     font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
     font-variant: normal;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: none;
-}
+} 
 
-.login-1 {
+.login-datos {
     grid-column-start: 1;
     grid-column-end: -1;
     margin: inherit;
 }
 
-.login-2 {
+.login-mail {
     grid-column-start: 1;
     grid-column-end: 1;
     margin: inherit;
+    text-align: left;
+    margin-left: 10px;
 }
 
-.login-3 {
-    grid-column-start: 2;
-    grid-column-end: -1;
-    margin: inherit;
-}
-
-.login-5 {
-    margin: inherit;
-}
-
-.login-5 {
+#login-mailinput {
     grid-column-start: 3;
     grid-column-end: -1;
     margin: inherit;
-
+    margin-right: 10px
 }
 
-.login-6 {
+
+.login-pass {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#login-passinput {
+    margin: inherit;
+    grid-column-start: 3;
+    grid-column-end: -1;
+    margin-right: 10px
+}
+
+.login-but {
     grid-column-start: 4;
     background-color: transparent;
     margin: inherit;
+    margin-right: 10px;
+}
+
+.forgot {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 10px;
 }

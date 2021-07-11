@@ -94,7 +94,11 @@ ul.slider li:target {
 
 
 
-/* .slider_container {
+/* 
+
+Esto es un slider automático muy grande que funcionaba decentemente pero que lo descarté al no ocurríseme cómo controlarlo manualmente dentro de la web.
+
+.slider_container {
     overflow: hidden;
 }
 

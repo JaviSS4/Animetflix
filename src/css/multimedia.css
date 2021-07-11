@@ -101,7 +101,7 @@ img {
 .star input:before {
     content: url("../img/star-gray.png");
    
-    /* PROBLEMA CON FIREFOX */
+    /* Problema con Firefox y Edge que no he conseguido solucionar...*/
 }
 
 .star input:checked:before {

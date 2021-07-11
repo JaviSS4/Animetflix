@@ -17,12 +17,6 @@
     margin: 0;
     padding: 0;
     background-color: rgb(77, 0, 0);
-    /* display: grid;  
-    grid-template-columns: 
-        auto auto auto auto auto min(110px) min(220px);
-    grid-template-rows: 1;
-    justify-content:center;
-    align-content: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +132,10 @@
             font-size: 1rem;
             text-align: center;
         }
+
+        .searchandbutton {
+            padding-bottom: 10px;
+        }
     }
 
 .material-icons { 
@@ -145,6 +143,3 @@
     background-color: transparent;
     padding: 2px;
 }
-/*Cómo centrar la barra de búsqueda y el botón
-No termino de cuadrar la barra de navegación como a mí me gustaría
-*/
